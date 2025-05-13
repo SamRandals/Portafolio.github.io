@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <link rel="stylesheet" href="assets/styles/style.css">
     <title>Portfolio Samuel</title>
@@ -20,16 +21,16 @@
         <ul class="header__list">
             
             <li class="header__item">
-                <a href="" class="header__link">Inicio</a>
+                <a href="#presentation" class="header__link">Inicio</a>
             </li>
             <li class="header__item">
-                <a href="" class="header__link">Sobre mi</a>
+                <a href="#about-me" class="header__link">Sobre mi</a>
             </li>
             <li class="header__item">
-                <a href="" class="header__link">Habilidades</a>
+                <a href="#skills" class="header__link">Habilidades</a>
             </li>
             <li class="header__item">
-                <a href="" class="header__link">Portafolio</a>
+                <a href="#proyects" class="header__link">Portafolio</a>
             </li>
             <li class="header__item">
                 <a href="" class="header__link">Mas información</a>
@@ -37,7 +38,7 @@
         </ul>
     </header>
 
-    <section class="presentation">
+    <section class="presentation" id="presentation">
         <div class="presentation__wrapper">
             <div class="presentation__info">
                 <h1>Hola, soy <span class="nameText">Samuel</span></h1>
@@ -55,12 +56,12 @@
 
     </section>
 
-    <h1 class="title__aboutMe">Sobre <span>mi</span></h1>
+    <h1 class="title__aboutMe" id="about-me">Sobre <span>mi</span></h1>
     
 <!-- Sobre mi presentación -->
 
 
-    <section class="about__me">
+    <section class="about__me" >
         <div class="wrapper__about">
             <div class="image__container-about">
                 <img src="https://i.pinimg.com/736x/8e/35/ce/8e35ce260d667d9ddc357de0222bdfe3.jpg" alt="">
@@ -81,25 +82,25 @@
 <!-- Skills -->
 
 
-        <h1 class="title__skills">Mis <span>habilidades</span></h1>
+        <h1 class="title__skills" id="skills">Mis <span>habilidades</span></h1>
         <h2 class="subTitle__skills">Mis habilidades en el entorno de programación son:</h2>
 
-        <section class="section__skills">
+        <section class="section__skills" >
             <div class="skills__tecnologia">
                 <h2>Tecnologicas</h2>
-                <p>Html <span>90%</span></p>
+                <p>Html <span>avanzado-90%</span></p>
                 <div class="porcentaje__container">
                     <div class="porcentaje noventa"></div>
                 </div>
-                 <p>Css <span>85%</span></p>
+                 <p>Css <span>avanzado-85%</span></p>
                 <div class="porcentaje__container">
                     <div class="porcentaje ochentaicinco"></div>
                </div>
-                 <p>Javascript <span>65%</span></p>
+                 <p>Javascript <span>medio-65%</span></p>
                 <div class="porcentaje__container">
                     <div class="porcentaje seiscinco"></div>
                    </div>
-                 <p>React <span>30%</span></p>
+                 <p>React <span>basico-30%</span></p>
                 <div class="porcentaje__container">
                     <div class="porcentaje treinta"></div>
                 </div>
@@ -124,23 +125,50 @@
                     <div class="porcentaje aportIdeas"></div>
                 </div>
             </div>
-        </section>
+         
 
-        <h1 class="title__proyects">Mis <span>Proyectos</span>   </h1>
+        </section>
+<br>
+        <h1 class="title__proyects" id="proyects">Mis <span>Proyectos</span>   </h1>
 
             <!-- SESION DE PROYECTOS HECHOS CON LAS MANITOS Y LOS BRACITOS -->
-        <section class="proyects__main">
+        <section class="proyects__main" >
 
             <div class="proyects__grid">
+                <!-- proyects boxes -->
+                <div class="proyect__container">
+                    <div class="proyect__image-container">
+                        <img src="assets/media/images/whatsapp.webp" alt="" class="proyect__image">
+                        <div class="backgroundImage"></div>
+                        <div class="simbols__container">
+                            <div class="span">
+                                <a href="" class="material-symbols-outlined">share</a>
+                                <a href="https://samrandals.github.io/whatsappClon.github.io/" target="_blank" class="material-symbols-outlined">search</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>Clon de whatsapp con Html, css y Javascript vanilla</p>
+                    </div>
+                    <div class="tags">
+                        <div class="tag__box">Css</div>
+                        <div class="tag__box">html</div>
+                        <div class="tag__box">Javascript</div>
+                        
+                    </div>
+                </div>
+                <!-- proyect box end -->
+               <!-- proyects boxes -->
                 <div class="proyect__container">
                     <div class="proyect__image-container">
                         <img src="" alt="" class="proyect__image">
                         <div class="backgroundImage"></div>
                         <div class="simbols__container">
                             <div class="span">
+                                <a href="" class="material-symbols-outlined">share</a>
                                 <a href="" class="material-symbols-outlined">search</a>
-                                <a href="" class="material-symbols-outlined">search</a>
-                                <a href="" class="material-symbols-outlined">search</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -154,20 +182,143 @@
                         
                     </div>
                 </div>
-
+                <!-- proyect box end -->
+                  <!-- proyects boxes -->
                 <div class="proyect__container">
                     <div class="proyect__image-container">
                         <img src="" alt="" class="proyect__image">
+                        <div class="backgroundImage"></div>
+                        <div class="simbols__container">
+                            <div class="span">
+                                <a href="" class="material-symbols-outlined">share</a>
+                                <a href="" class="material-symbols-outlined">search</a>
+                                
+                            </div>
+                        </div>
                     </div>
                     <div class="info">
                         <p>Desarrollo con X y Y</p>
                     </div>
                     <div class="tags">
-                        <div class="tag__box">Pene</div>
+                        <div class="tag__box">Css</div>
+                        <div class="tag__box">html</div>
+                        <div class="tag__box">Javascript</div>
+                        
                     </div>
                 </div>
+                <!-- proyect box end -->
+                 <!-- proyects boxes -->
+                <div class="proyect__container">
+                    <div class="proyect__image-container">
+                        <img src="" alt="" class="proyect__image">
+                        <div class="backgroundImage"></div>
+                        <div class="simbols__container">
+                            <div class="span">
+                                <a href="" class="material-symbols-outlined">share</a>
+                                <a href="" class="material-symbols-outlined">search</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>Desarrollo con X y Y</p>
+                    </div>
+                    <div class="tags">
+                        <div class="tag__box">Css</div>
+                        <div class="tag__box">html</div>
+                        <div class="tag__box">Javascript</div>
+                        
+                    </div>
+                </div>
+                <!-- proyect box end -->
+                  <!-- proyects boxes -->
+                <div class="proyect__container">
+                    <div class="proyect__image-container">
+                        <img src="" alt="" class="proyect__image">
+                        <div class="backgroundImage"></div>
+                        <div class="simbols__container">
+                            <div class="span">
+                                <a href="" class="material-symbols-outlined">share</a>
+                                <a href="" class="material-symbols-outlined">search</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>Desarrollo con X y Y</p>
+                    </div>
+                    <div class="tags">
+                        <div class="tag__box">Css</div>
+                        <div class="tag__box">html</div>
+                        <div class="tag__box">Javascript</div>
+                        
+                    </div>
+                </div>
+                <!-- proyect box end -->
+            </div>
+            
+        </section>
+        <!-- Experience theme  -->
+      <h1 class="title__skills">Mi <span>Experiencia</span></h1>
+        <h2 class="subTitle__skills">Mi vida en la tecnologia </h2>
+        
+        <!-- section experience teme -->
+        <section class="section__exp" id="exp">
+            <div class="info__exp">
+                <h2>Desarrollador</h2>
+                <p>Actualmente soy un desarrollador de software autodidacta, que se esfuerza todos los días por aprender mucho más sobre las nuevas tecnologías en el apartado <span>web</span>.</p>
+                <p>Manejo tecnologías como HTML, CSS, JavaScript y CSS.</p>
+                <p>También tengo conocimiento básico y medio en las tecnologías de <span>PHP, SQL y React</span>.</p>
+                <p>Considero tener un muy buen conocimiento en CSS, JavaScript y HTML. Actualmente sigo aprendiendo de JavaScript.</p>
+            </div>
+            <div class="education">
+                <h2>Educación</h2>
+                <p>Me eduqué en la institución educativa <span>Pedro Antonio Molina</span>, Cali, donde me gradué en bachiller y obtuve el título de <span>Técnico en Sistemas</span>.</p>
+                <h2>Educación superior</h2>
+                <p>Actualmente estoy estudiando la carrera <span>Análisis y desarrollo de software</span>, cuyo propósito es desarrollar interfaces para proyectos productivos que generen una buena experiencia al usuario, incluyendo funcionalidades, apartados, modales y opciones que permitan resolver los problemas del usuario.</p>
+            </div>
+        </section>
+
+
+        <!-- contactarme -->
+          <h1 class="title__skills">Contacta<span>me</span></h1>
+        <h2 class="subTitle__skills">información de contacto </h2>
+        <section class="section__contacts" id="contacts">
+            <form action="" class="form__contacts">
+                <label for="name">Nombre</label>
+                <input type="text" name="" id="name">
+
+                <label for="lastname">Apellidos</label>
+                <input type="text" name="" id="lastname">
+
+                <label for="reason">Razon</label>
+                <textarea name="" id="reason"></textarea>
+                <button class="send">Enviar</button>
+                <div class="icons__socialNetwork">
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-whatsapp"></i>
+                    <i class="bi bi-envelope"></i>
+                </div>
+            </form>
+        </section>
+
+
+        <footer class="footer">
+            <h2>Redes sociales</h2>
+            <div class="social__icons">
+                <i class="bi-github"> </i>
+                <i class="bi-facebook"> </i>
+                <i class="bi-whatsapp"> </i>
+                <i class="bi-twitter"> </i>
+            </div>
+            <h2>Mas informacion</h2>
+            <div class="new__info">
+                <p>Gmail: <span>samnanezedu@gmail.com</span></p>
+                <p>whatsapp: <span>+57 3113559317</span></p>
             </div>
 
-        </section>
+        </footer>
+
+        <script src="assets/script/animatiosns.js"></script>
 </body>
 </html>
