@@ -318,6 +318,7 @@ span{
 .p__description{
     color: #888;
     font-size: 25px;
+    padding: 10px;
 }
 .p__title-aboutMe{
     font-size: 25px;
