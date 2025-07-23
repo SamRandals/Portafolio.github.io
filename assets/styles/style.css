@@ -301,10 +301,12 @@ span{
 
 /* info container  */
 .info__container{
+    padding: 20px;
     width: 100%;
 }
 .info__container h1{
-    color: #222;
+    text-align: center;
+    color: var(--title-color);
     font-size: 40px;
     margin-top: 70px;
 }
