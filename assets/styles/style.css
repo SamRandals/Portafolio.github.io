@@ -90,7 +90,23 @@ span{
 .header__link:hover{
     border-bottom: 2px solid var(--text-color);
 }
-@media screen and  (max-width:550px){
+
+
+@media screen and  (max-width:750px){
+    .menu{
+        display: flex;
+    }
+    .header__list{
+        display: none;
+        position: absolute;
+        top: 100%;
+        justify-content: space-between;
+        background-color: inherit;
+        flex-direction: column;
+        height: 30dvh;
+    }
+}
+@media screen and  (max-width:700px){
     .menu{
         display: flex;
     }
@@ -119,7 +135,7 @@ span{
     }
 }
 
-@media screen and  (max-width:700px){
+@media screen and  (max-width:550px){
     .menu{
         display: flex;
     }
@@ -133,20 +149,9 @@ span{
         height: 30dvh;
     }
 }
-@media screen and  (max-width:750px){
-    .menu{
-        display: flex;
-    }
-    .header__list{
-        display: none;
-        position: absolute;
-        top: 100%;
-        justify-content: space-between;
-        background-color: inherit;
-        flex-direction: column;
-        height: 30dvh;
-    }
-}
+
+
+
 /* Presentation apartado */
 
 .presentation{
@@ -202,15 +207,17 @@ span{
 }
 .buttons__info{
     display: flex;
+    width: 200px;
     margin-top: 10px;
+    
 }
 .buttons__info button{
-    margin: 10px;
+    margin: 5px 5px 5px 5px;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: 18px;
     border: 2px solid var(--text-color);
     color:var(--text-color);
-    padding: 8px 25px 8px 25px;
+    
     transition: scale .8s, background .8s, color .8s;
 }
 .buttons__info button:hover{
@@ -254,6 +261,8 @@ span{
     margin: 15px auto 15px auto;
     padding: 75px 0px 0px 0px;
 }
+
+
 .title__aboutMe::after{
     content: '';
     display: block;
@@ -268,7 +277,46 @@ span{
     color: var(--text-color);
     font-size: 50px;
 }
+/* media queryes about me */
+@media screen and (max-width:700px){
+    .title__aboutMe{
+        margin-top: 20px;
+        padding: 0;
+        font-size: 25px;
+    }
+    .title__aboutMe span{
+        font-size: 25px;
+    }
+}
 
+/* Media queryes */
+
+@media screen and (max-width:700px){
+    .presentation{
+        height: auto;
+    }
+    .image__container{
+        width: 150px;
+        height: 150px;
+    }
+    .buttons__info{
+        width: 100%;
+    }
+    .buttons__info button{
+        
+        width: 100px;
+        font-size: 12px;
+    }
+   .presentation__info h1{
+        font-size: 25px;
+}
+.presentation__info h2{
+    font-size: 18px;
+}
+.presentation__info span{
+    font-size: 28px;
+}
+}
 /* About me  */
 
 
@@ -297,6 +345,14 @@ span{
 .image__container-about img:hover{
     scale: 1.2;
 }
+@media screen and (max-width:700px){
+    .about__me{
+        height: auto;
+    }
+    .wrapper__about{
+        flex-direction: column;
+    }
+}
 
 
 /* info container  */
@@ -324,7 +380,30 @@ span{
     font-size: 25px;
     color: #222;
 }
-
+/* media query info container */
+@media screen and (max-width:700px){
+    .info__container{
+        padding: 0px;
+    }
+    .info__container h1{
+        font-size: 25px;
+        margin: 30px 0px 30px 0px;
+    }
+    .p__description{
+        margin: 0px auto 0px auto;
+        font-size: 18px;
+        width: 80%;
+        padding: 0px;
+    }
+    .p__title-aboutMe{
+        font-size: 18px;
+        text-align: center;
+    }
+    .p__title-aboutMe span{
+        font-size: 18px;
+        margin: 0px auto 0px auto;
+    }
+}
 /* Mis habilidades */
 
 .section__skills{
@@ -402,6 +481,31 @@ span{
     width: 30%;
 }
 
+@media screen and (max-width:700px){
+    .section__skills{
+        height: auto;
+    }
+    .title__skills, .title__skills span{
+        font-size: 25px;
+    }
+    .subTitle__skills{
+        font-size: 20px;
+        width: 80%;
+        margin: 0px auto 0px auto;
+    }
+    .skills__tecnologia{
+        padding: 0px;
+    }
+    .skills__tecnologia h2{
+        font-size: 20px;
+    }
+    .skills__tecnologia p{
+        font-size: 18px;
+    }
+    .skills__tecnologia p span{
+        font-size: 18px;
+    }
+}
 /* trabajo team skills bars */
 .skills__trabajo span{
     position: absolute;
@@ -424,7 +528,18 @@ width:75%;
 }
 .skills__tecnologia h2, .skills__trabajo h2{
     font-size: 30px;
-} 
+}
+@media screen and (max-width:700px) {
+    .skills__trabajo h2{
+        font-size: 25px;
+    }
+    .skills__trabajo p{
+        font-size: 18px;
+    }
+    .skills__trabajo p span{
+        font-size: 18px;
+    }
+}
 
 @media screen and (max-width:500px){
     .section__skills{
@@ -460,11 +575,19 @@ width:75%;
     background-image: var(--green-rgb-color);
 
 }
+@media screen and (max-width:700px){
+    .title__proyects{
+        font-size: 25px;
+    }
+    .title__proyects span{
+        font-size: 25px;
+    }
+}
 
 
 .proyects__main{
     display: flex;
-    height: 100dvw;
+    height: auto;
 }
 .proyects__grid{
     display: grid;
@@ -477,29 +600,7 @@ width:75%;
     margin:auto;
 }
 
-@media  screen and (max-width:500px) {
-    .proyects__main{
-        height: auto;
-    }
-}
 
-@media  screen and (max-width:600px) {
-    .proyects__main{
-        height: auto;
-    }
-}
-
-
-@media  screen and (max-width:650px) {
-    .proyects__main{
-        height: auto;
-    }
-}
-@media  screen and (max-width:750px) {
-    .proyects__main{
-        height: auto;
-    }
-}
 
 .proyect__container{
     display: flex;
@@ -589,13 +690,27 @@ width:75%;
 }
 
 
+@media screen and (max-width:700px){
+    .proyects__main{
+        height: auto;
+    }
+    .proyects__grid{
+     grid-template-columns: repeat(1, minmax(200px, 1fr));
+    
+    grid-template-rows:400px;
+    }
+    .proyect__image{
+        height: 415px;
+    }
+}
+
 /* section my own education */
 
 .section__exp{
     padding: 30px;
     margin: auto;
-    width: 70dvw;
-    border-left: 1px solid #92b8f1;
+    width: 80%;
+    
     border-radius: 20px;
 }
 .section__exp h2{
@@ -615,11 +730,19 @@ width:75%;
     color:#555;
 }
 .education span{
-    color:#333;
+    color:#396781;
     font-weight: 400;
 }
 
-
+/* media queryes my own education */
+@media screen and (max-width:700px){
+    .section__exp h2{
+        font-size: 20px;
+    }
+    .section__exp p{
+        font-size: 18px;
+    }
+}
 
 
 
