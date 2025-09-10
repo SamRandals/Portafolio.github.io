@@ -7,7 +7,7 @@ body, header, h1, h2, h3, h4 ,h5, section ,header, ul, li, a, label, input{
 }
 
 body {
-  font-family: "Edu QLD Beginner", cursive;
+  font-family: sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -792,7 +792,9 @@ width:75%;
     display: flex;
     margin-top: 20px;
 }
-
+.icons__socialNetwork a{
+    color: #222;
+}
 
 
 /* footer */

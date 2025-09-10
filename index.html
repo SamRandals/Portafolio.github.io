@@ -288,24 +288,35 @@
         <!-- contactarme -->
           <h1 class="title__skills">Contacta<span>me</span></h1>
         <h2 class="subTitle__skills">información de contacto </h2>
-        <section class="section__contacts" id="contacts">
-            <form action="" class="form__contacts">
-                <label for="name">Nombre</label>
-                <input type="text" name="" id="name">
+      <h1 class="title__skills">Contacta<span>me</span></h1>
+<h2 class="subTitle__skills">Información de contacto</h2>
+<section class="section__contacts" id="contacts">
+  <form action="https://formspree.io/f/tu_id" method="POST" class="form__contacts">
+    <label for="name">Nombre</label>
+    <input type="text" name="name" id="name" required>
 
-                <label for="lastname">Apellidos</label>
-                <input type="text" name="" id="lastname">
+    <label for="lastname">Apellidos</label>
+    <input type="text" name="lastname" id="lastname">
 
-                <label for="reason">Razon</label>
-                <textarea name="" id="reason"></textarea>
-                <button class="send">Enviar</button>
-                <div class="icons__socialNetwork">
-                    <i class="bi bi-github"></i>
-                    <i class="bi bi-whatsapp" href="https://youtube.com"></i>
-                    <i class="bi bi-envelope"></i>
-                </div>
-            </form>
-        </section>
+    <label for="reason">Razón</label>
+    <textarea name="reason" id="reason" required></textarea>
+
+    <button type="submit" class="send">Enviar</button>
+    
+    <div class="icons__socialNetwork">
+      <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://wa.me/573001234567" target="_blank" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="mailto:tucorreo@ejemplo.com" aria-label="Correo">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+  </form>
+</section>
+
 
 
         <footer class="footer">
